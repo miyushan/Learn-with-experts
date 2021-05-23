@@ -1,0 +1,46 @@
+body{
+	font-family: Arial, Helvetica, "sans-serif";
+    font-size: 80%;
+    margin: 0%;
+}
+
+.navBar {
+    background-color: #0e0864e0;
+    overflow: hidden;
+    padding: 14px 16px;
+    clear: none;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 200px;
+}
+
+.navBar-Left{
+    float: left;
+    text-align: center;
+}
+
+.navBar-right {
+    float: right;
+    text-align: center;
+}
+
+
+.navBar a {
+  float: left;
+  color: #ffffff;
+  text-align: center;
+  padding: 5px 16px;
+  text-decoration: none;
+}
+
+.navBar-right a:hover {
+    color: rgb(255, 60, 0);
+}
+
+#active{
+    color: rgb(255, 60, 0);
+}
