@@ -4,36 +4,59 @@ body{
     margin: 0%;
 }
 
-.navBar {
+.container{
     background-color: #0e0864e0;
+    height: 1000px;
+    padding: 2.8% 10.5%;
+}
+
+.navBar {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0%;
     overflow: hidden;
     padding: 14px 16px;
     clear: none;
+    height: auto;
 }
+
+.left{
+    text-align: center;
+    float: left;
+}
+
+.right{
+    text-align: center;
+    float: right;
+    margin-right: 0%;
+    
+}
+
+/* ul {
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+} */
+
 
 #logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 200px;
-}
-
-.navBar-Left{
-    float: left;
+    max-width: 320px;
+    width: 97%;
     text-align: center;
 }
-
-.navBar-right {
-    float: right;
-    text-align: center;
-}
-
 
 .navBar a {
   float: left;
   color: #ffffff;
   text-align: center;
-  padding: 5px 16px;
+  padding: 0px 9px;
   text-decoration: none;
 }
 
