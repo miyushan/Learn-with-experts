@@ -67,3 +67,72 @@ body{
 #active{
     color: rgb(255, 60, 0);
 }
+
+
+
+
+@media screen and (max-width: 2500px) {
+    #navIcon {
+        display: none;
+    }
+    button{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .container{
+        padding: 2.8% 3%;   
+    }
+    .left{
+        width: 30%;
+    }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 782px) {
+
+    .container{
+        padding: 0%;
+    }
+
+    .navBar{
+        padding: 5% 3%;
+    }
+
+    button{
+        background-color:none;
+    }
+
+    .left{
+        width: 100%;
+    }
+
+    #myDropdown{
+        display: none;
+    }
+
+    #logo{
+        float: left;
+        width: 65%;
+        height: auto;
+    }
+
+    button{
+        display: block;
+        background-color: rgba(255, 255, 255, 0);
+        border-width: 0ch;
+    }
+
+    #navIcon {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 35px;
+        height: auto;
+        text-align: center;
+    }
+    
+    
+
+}
