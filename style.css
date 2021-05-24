@@ -29,8 +29,7 @@ body{
 .right{
     text-align: center;
     float: right;
-    margin-right: 0%;
-    
+    margin-right: 0%;   
 }
 
 #logo{
@@ -59,6 +58,9 @@ body{
 }
 
 
+.scroll {
+    background-color: rgb(23, 92, 241);
+}
 
 
 @media screen and (max-width: 2500px) {
