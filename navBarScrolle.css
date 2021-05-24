@@ -83,68 +83,8 @@ body{
 /* equal and more less 782px screen size */
 @media screen and (max-width: 782px) {
 
-    .container{
-        padding: 0%;
-    }
-
-    .navBar{
-        padding: 5% 3%;
-    }
-
-    button{
-        background-color:none;
-    }
-
-    .left{
-        width: 100%;
-    }
-
-    #logo{
-        float: left;
-        width: 65%;
-        height: auto;
-    }
-
-    button{
-        display: block;
-        background-color: rgba(255, 255, 255, 0);
-        border-width: 0ch;
-    }
-
-    #navIcon {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 35px;
-        height: auto;
-        text-align: center;
-    }
-    
-    .dropdown-content {
+    #WhiteNav{
         display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        overflow: auto;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-    }
-
-    .dropdown {
-        position: absolute;
-        display: inline-block;
-    }
-
-    .right{
-        position: relative;
-        display: inline-block;
-    }
-
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
     }
     
 }
