@@ -58,9 +58,7 @@ body{
 }
 
 
-.scroll {
-    background-color: rgb(23, 92, 241);
-}
+
 
 
 @media screen and (max-width: 2500px) {
@@ -70,6 +68,9 @@ body{
     button{
         display: none;
     }
+    .scroll {
+        background-color: rgb(23, 92, 241);
+    }
 }
 
 @media screen and (max-width: 1025px) {
@@ -78,6 +79,9 @@ body{
     }
     .left{
         width: 30%;
+    }
+    .scroll {
+        background-color: #0e0864e0;
     }
 }
 
@@ -147,5 +151,7 @@ body{
         text-decoration: none;
         display: block;
     }
-    
+    .scroll {
+        background-color: #0e0864e0;
+    }
 }
