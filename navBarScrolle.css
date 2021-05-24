@@ -6,8 +6,8 @@ body{
 
 .container{
     background-color: #0e0864e0;
-    height: 1000px;
-    padding: 2.8% 10.5%;
+    padding: 0% 10.5%;
+    background-color: white;
 }
 
 .navBar {
@@ -19,6 +19,7 @@ body{
     padding: 14px 16px;
     clear: none;
     height: auto;
+    background-color: white;
 }
 
 .left{
@@ -44,14 +45,14 @@ body{
 
 .navBar a {
   float: left;
-  color: #ffffff;
+  color: #555555;
   text-align: center;
   padding: 0px 9px;
   text-decoration: none;
 }
 
 .dropdown-content a:hover {
-    color: rgb(255, 60, 0);
+    color: rgb(255, 60, 0); 
 }
 
 #myDropdown .active{
@@ -60,7 +61,7 @@ body{
 
 
 
-
+/* equal and more than 2500px screen size */
 @media screen and (max-width: 2500px) {
     #navIcon {
         display: none;
@@ -79,7 +80,7 @@ body{
     }
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
+/* equal and more less 782px screen size */
 @media screen and (max-width: 782px) {
 
     .container{
