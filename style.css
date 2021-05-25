@@ -76,7 +76,6 @@ body{
 #nav0{
     position: sticky;
     top: 0;
-    transition: all .2s ease-in-out;
 }
 
 @media screen and (max-width: 2500px) {
@@ -88,17 +87,18 @@ body{
     }
     #nav0{
         display: none;
+        transition: all .2s ease-in-out;
     }
+
     .scroll #nav0{
         display: block;
         position: fixed;
-        width: 100%;   
+        width: 100%;
     }
-
     .scroll .navBar1{
-        display: block;
-        padding: 0 11.5%;
-        height: 79px;
+        transition: 10s ease-in-out;
+        padding-top: 14.5px;
+        padding-bottom: 14.5px;
     }
     
 }
@@ -116,6 +116,12 @@ body{
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 782px) {
 
+    #nav0{
+        display: none;
+    }
+    .navBar1{
+        display: none;
+    }
     .navBar, .navBar1{
         padding: 5% 3%;
     }
