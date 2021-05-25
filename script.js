@@ -1,6 +1,6 @@
 
     window.onscroll = function(){
-        if(document.body.scrollTop >= 118.226 || document.documentElement.scrollTop >= 118.226){
+        if(document.body.scrollTop >= 124.063 || document.documentElement.scrollTop >= 124.063){
             // console.log("Hii");
             nav.classList.add("scroll");
         } else {

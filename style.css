@@ -6,8 +6,6 @@ body{
 
 .container{
     background-color: #0e0864e0;
-    height: 1000px;
-    padding: 2.8% 10.5%;
 }
 
 .navBar {
@@ -16,9 +14,14 @@ body{
     align-items: center;
     margin: 0%;
     overflow: hidden;
-    padding: 14px 16px;
+    padding: 60px 11.5% 60px 11.5%;
     clear: none;
     height: auto;
+}
+
+.down{
+    background-color: #0e0864e0;
+    height: 1000px;
 }
 
 .left{
@@ -29,7 +32,7 @@ body{
 .right{
     text-align: center;
     float: right;
-    margin-right: 0%;   
+    margin-right: 0%;
 }
 
 #logo{
@@ -59,8 +62,6 @@ body{
 
 
 
-
-
 @media screen and (max-width: 2500px) {
     #navIcon {
         display: none;
@@ -68,29 +69,49 @@ body{
     button{
         display: none;
     }
-    .scroll {
-        background-color: rgb(23, 92, 241);
+
+    #nav{
+        position: fixed;
+        width: 100%;
+        transition: all .2s ease-in-out;
+    }
+
+    .scroll .container{
+        padding: 0;
+        background-color: rgb(116, 62, 62);
+        
+    }
+    .scroll .navBar{
+        background-color: rgb(255, 255, 255);
+        padding: 0 11.5%;
+        height: 79px;
+    }
+    .scroll .navBar a {
+        color: #534b4b;
+    }
+    .scroll .dropdown-content a:hover {
+        color: rgb(255, 60, 0);
     }
 }
 
 @media screen and (max-width: 1025px) {
-    .container{
+    /* .container{
         padding: 2.8% 3%;   
-    }
+    } */
     .left{
         width: 30%;
     }
-    .scroll {
-        background-color: #0e0864e0;
+    #nav{
+        position: unset;
     }
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 782px) {
 
-    .container{
+    /* .container{
         padding: 0%;
-    }
+    } */
 
     .navBar{
         padding: 5% 3%;
@@ -150,8 +171,5 @@ body{
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-    .scroll {
-        background-color: #0e0864e0;
     }
 }
