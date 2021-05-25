@@ -35,7 +35,7 @@ body{
     margin-right: 0%;
 }
 
-#logo{
+#logo, #logo2{
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -91,6 +91,15 @@ body{
     }
     .scroll .dropdown-content a:hover {
         color: rgb(255, 60, 0);
+    }
+    #logo2{
+        display: none;
+    }
+    .scroll #logo{
+        display: none;
+    }
+    .scroll #logo2{
+        display: block;
     }
 }
 
