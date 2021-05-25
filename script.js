@@ -1,9 +1,9 @@
 
     window.onscroll = function(){
-        if(document.body.scrollTop >= 124.063 || document.documentElement.scrollTop >= 124.063){
+        if(document.body.scrollTop >= 170.063 || document.documentElement.scrollTop >= 170.063){
             // console.log("Hii");
-            nav.classList.add("scroll");
+            outter.classList.add("scroll");
         } else {
-            nav.classList.remove("scroll");
+            outter.classList.remove("scroll");
         }
     };

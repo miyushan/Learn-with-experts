@@ -4,11 +4,15 @@ body{
     margin: 0%;
 }
 
-.container{
+.container1{
     background-color: #0e0864e0;
 }
 
-.navBar {
+.container2{
+    background-color: #ffffffe0;
+}
+
+.navBar, .navBar1 {
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -20,7 +24,7 @@ body{
 }
 
 .down{
-    background-color: #0e0864e0;
+    background-color: #000000e0;
     height: 1000px;
 }
 
@@ -52,6 +56,15 @@ body{
   text-decoration: none;
 }
 
+.navBar1 a {
+    float: left;
+    color: #5c5b5b;
+    text-align: center;
+    padding: 0px 9px;
+    text-decoration: none;
+  }
+
+  
 .dropdown-content a:hover {
     color: rgb(255, 60, 0);
 }
@@ -60,7 +73,11 @@ body{
     color: rgb(255, 60, 0);
 }
 
-
+#nav0{
+    position: sticky;
+    top: 0;
+    transition: all .2s ease-in-out;
+}
 
 @media screen and (max-width: 2500px) {
     #navIcon {
@@ -69,44 +86,25 @@ body{
     button{
         display: none;
     }
-
-    #nav{
+    #nav0{
+        display: none;
+    }
+    .scroll #nav0{
+        display: block;
         position: fixed;
-        width: 100%;
-        transition: all .2s ease-in-out;
+        width: 100%;   
     }
 
-    .scroll .container{
-        padding: 0;
-        background-color: rgb(116, 62, 62);
-        
-    }
-    .scroll .navBar{
-        background-color: rgb(255, 255, 255);
+    .scroll .navBar1{
+        display: block;
         padding: 0 11.5%;
         height: 79px;
     }
-    .scroll .navBar a {
-        color: #534b4b;
-    }
-    .scroll .dropdown-content a:hover {
-        color: rgb(255, 60, 0);
-    }
-    #logo2{
-        display: none;
-    }
-    .scroll #logo{
-        display: none;
-    }
-    .scroll #logo2{
-        display: block;
-    }
+    
 }
 
 @media screen and (max-width: 1025px) {
-    /* .container{
-        padding: 2.8% 3%;   
-    } */
+    
     .left{
         width: 30%;
     }
@@ -118,11 +116,7 @@ body{
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 782px) {
 
-    /* .container{
-        padding: 0%;
-    } */
-
-    .navBar{
+    .navBar, .navBar1{
         padding: 5% 3%;
     }
 
