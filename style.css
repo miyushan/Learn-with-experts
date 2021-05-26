@@ -12,13 +12,24 @@ body{
     background-color: #ffffffe0;
 }
 
-.navBar, .navBar1 {
+.navBar {
     justify-content: space-between;
     display: flex;
     align-items: center;
     margin: 0%;
     overflow: hidden;
     padding: 60px 11.5% 60px 11.5%;
+    clear: none;
+    height: auto;
+}
+
+.navBar1 {
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin: 0%;
+    overflow: hidden;
+    padding: 14.5px 11.5%;
     clear: none;
     height: auto;
 }
@@ -74,8 +85,9 @@ body{
 }
 
 #nav0{
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
 }
 
 @media screen and (max-width: 2500px) {
@@ -87,20 +99,11 @@ body{
     }
     #nav0{
         display: none;
-        transition: all .2s ease-in-out;
     }
 
     .scroll #nav0{
         display: block;
-        position: fixed;
-        width: 100%;
     }
-    .scroll .navBar1{
-        transition: 10s ease-in-out;
-        padding-top: 14.5px;
-        padding-bottom: 14.5px;
-    }
-    
 }
 
 @media screen and (max-width: 1025px) {
@@ -114,7 +117,7 @@ body{
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
-@media screen and (max-width: 782px) {
+@media screen and (max-width: 808px) {
 
     #nav0{
         display: none;
