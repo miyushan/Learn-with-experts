@@ -1,6 +1,6 @@
 body{
-	font-family: Arial, Helvetica, "sans-serif";
-    font-size: 80%;
+	font-family: 'Open Sans', sans-serif;
+    font-kerning:auto;
     margin: 0%;
 }
 
@@ -18,7 +18,11 @@ body{
     align-items: center;
     margin: 0%;
     overflow: hidden;
-    padding: 60px 11.5% 60px 11.5%;
+    width: 1140px;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 60px 11.5% 60px 11.5%; */
     clear: none;
     height: auto;
 }
@@ -28,10 +32,13 @@ body{
     display: flex;
     align-items: center;
     margin: 0%;
+    width: 1140px;
     overflow: hidden;
-    padding: 14.5px 11.5%;
+    margin-left: auto;
+    margin-right: auto;
+    /* padding: 0px 11.5%; */
     clear: none;
-    height: auto;
+    height: 79px;
 }
 
 .down{
@@ -47,34 +54,42 @@ body{
 .right{
     text-align: center;
     float: right;
-    margin-right: 0%;
+    /* margin-right: 0%; */
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-right: 1px;
 }
 
 #logo, #logo2{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 320px;
-    width: 97%;
+    max-width: 310px;
+    width: 100%;
     text-align: center;
 }
 
-.navBar a {
+.navBar a, .navBar1 a {
   float: left;
   color: #ffffff;
   text-align: center;
-  padding: 0px 9px;
+  padding: 5px 8px 0 8px;
   text-decoration: none;
+  font-size: 13px !important;
+  line-height: 60px !important;
+  margin: 10px auto;
+  font-weight: 400;
+  font-style: inherit;
 }
 
 .navBar1 a {
-    float: left;
     color: #5c5b5b;
-    text-align: center;
-    padding: 0px 9px;
-    text-decoration: none;
-  }
+}
 
+
+#myDropdown{
+    display: block;
+    margin-top: -6px;
+    max-height: 85px !important;
+}
   
 .dropdown-content a:hover {
     color: rgb(255, 60, 0);
@@ -90,12 +105,25 @@ body{
     width: 100%;
 }
 
+.mainLogo1{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.left{
+    margin: 20px 70px 20px 0;
+}
+
 @media screen and (max-width: 2500px) {
     #navIcon {
         display: none;
     }
     button{
         display: none;
+    }
+    .setup{
+        position: relative;
+        transform: translate(9px,-12px);
     }
     #nav0{
         display: none;
@@ -104,6 +132,8 @@ body{
     .scroll #nav0{
         display: block;
     }
+
+    
 }
 
 @media screen and (max-width: 1025px) {
@@ -131,10 +161,6 @@ body{
 
     button{
         background-color:none;
-    }
-
-    .left{
-        width: 100%;
     }
 
     #logo{
