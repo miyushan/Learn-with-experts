@@ -5,7 +5,7 @@ body{
 }
 
 .container1{
-    background-color: #0e0864e0;
+    background-color: #0e0864;
 }
 
 .container2{
@@ -16,15 +16,14 @@ body{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    margin: 0%;
     overflow: hidden;
-    width: 1140px;
+    max-width: 1140px;
     padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
     /* padding: 60px 11.5% 60px 11.5%; */
-    clear: none;
-    height: auto;
+    /* clear: none;
+    height: auto; */
 }
 
 .navBar1 {
@@ -32,12 +31,12 @@ body{
     display: flex;
     align-items: center;
     margin: 0%;
-    width: 1140px;
+    max-width: 1140px;
     overflow: hidden;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 0px 11.5%; */
-    clear: none;
+    /* padding: 0px 11.5%;
+    clear: none; */
     height: 79px;
 }
 
@@ -102,6 +101,7 @@ body{
 #nav0{
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -132,12 +132,20 @@ body{
     .scroll #nav0{
         display: block;
     }
-
-    
 }
 
-@media screen and (max-width: 1025px) {
-    
+
+
+@media screen and (max-width: 1430px) {
+    #outter{
+        padding: 5%;
+        background-color: #0e0864;
+        padding-top: 0;
+    }
+    .setup{
+        position: relative;
+        transform: translate(0,0);
+    }
     .left{
         width: 30%;
     }
@@ -146,8 +154,30 @@ body{
     }
 }
 
+@media screen and (max-width: 1206px) {
+    .navBar1{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 808px) {
+
+    #myDropdown{
+        display: none;
+    }
+    #outter{
+        padding: 5%;
+        background-color: #0e0864;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .setup{
+        position: relative;
+        transform: translate(0,0);
+    }
 
     #nav0{
         display: none;
@@ -155,8 +185,8 @@ body{
     .navBar1{
         display: none;
     }
-    .navBar, .navBar1{
-        padding: 5% 3%;
+    .navBar{
+        padding: 0 3%;
     }
 
     button{
@@ -165,8 +195,8 @@ body{
 
     #logo{
         float: left;
-        width: 65%;
-        height: auto;
+        max-height: 33px;
+        width: auto;
     }
 
     button{
