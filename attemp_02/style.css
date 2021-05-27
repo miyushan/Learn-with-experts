@@ -1,0 +1,37 @@
+.header-default .site-heading a img {
+    max-width: 310px !important;
+    width: 310px !important;
+    height: auto;
+}
+
+/* 0 magin padding */
+.site-logo-img .site-title{
+    margin: 0;
+    padding: 0;
+}
+
+.site-heading{
+    padding: 20px auto;
+}
+
+#primary-navigation #menu-menu-top .menu-item a{
+    padding: 0px 8px;
+    font-size: 13px;
+    line-height: 60px !important;
+    text-align: center;
+    width: 100%;
+    text-transform: uppercase;
+    margin: 10px auto;
+    color: #fff;
+    padding-top: 5px !important;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-weight: 600;
+}
+.header-default .site-navigation .nav-menu {
+    text-align: left;
+    float: right;
+}
+.site-navigation ul {
+    list-style: none;
+}
