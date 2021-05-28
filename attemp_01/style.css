@@ -1,15 +1,25 @@
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Open Sans';
     font-kerning:auto;
     margin: 0%;
 }
 
 .container1{
-    background-color: #0e0864;
+    /* background-color: #0e0864; */
 }
 
 .container2{
     background-color: #ffffffe0;
+}
+
+.overlay{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color:rgba(0,25,43,.6);
+    width: 100%;
+    height: 389.91px;
+    z-index: -1;
 }
 
 .navBar {
@@ -21,9 +31,9 @@ body{
     padding-top: 40px;
     margin-left: auto;
     margin-right: auto;
-    /* padding: 60px 11.5% 60px 11.5%; */
-    /* clear: none;
-    height: auto; */
+    height: auto;
+    margin-top: -389.91px;
+    /* z-index: 1; */
 }
 
 .navBar1 {
@@ -40,14 +50,31 @@ body{
     height: 79px;
 }
 
+.inner-content{
+    margin: 0;
+    padding: 35px 15px 0 15px;
+}
+.navbar-contents{
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 389.9px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    text-align: center;
+}
 .down{
-    background-color: #000000e0;
+    /* background-color: #000000e0; */
     height: 3000px;
 }
 
 .left{
     text-align: center;
     float: left;
+    width: 33.333333%;
 }
 
 .right{
@@ -56,7 +83,9 @@ body{
     /* margin-right: 0%; */
     padding-top: 3px;
     padding-bottom: 3px;
-    margin-right: 1px;
+    /* padding: 3px 8.325px; */
+    /* margin-right: 1px; */
+    margin: 0 1px 0 -12px;
 }
 
 #logo, #logo2{
@@ -64,6 +93,23 @@ body{
     max-width: 310px;
     width: 100%;
     text-align: center;
+}
+
+#nonStyle{
+    display: block;
+    list-style-type: none;
+    margin: -6px 0 0 0;
+    border-image-width: 1;
+    padding-inline-start: 0%;
+}
+li{
+    float: left;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding: 0%;
+    margin: 0%;
 }
 
 .navBar a, .navBar1 a {
@@ -75,8 +121,16 @@ body{
   font-size: 13px !important;
   line-height: 60px !important;
   margin: 10px auto;
-  font-weight: 400;
-  font-style: inherit;
+  font-weight: 600;
+  font-style: normal;
+  background-attachment: scroll;
+  background-clip: border-box;
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition-duration: 0.2S;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  border-image-width: 1;
 }
 
 .navBar1 a {
@@ -84,18 +138,20 @@ body{
 }
 
 
+
 #myDropdown{
     display: block;
-    margin-top: -6px;
+    /* margin-top: -6px; */
+    /* max-width: 435.85px; */
     max-height: 85px !important;
 }
   
 .dropdown-content a:hover {
-    color: rgb(255, 60, 0);
+    color: #ff4941;
 }
 
 #myDropdown .active{
-    color: rgb(255, 60, 0);
+    color: #ff4941;
 }
 
 #nav0{
@@ -114,16 +170,90 @@ body{
     margin: 20px 70px 20px 0;
 }
 
+#video1{
+    position: relative;
+    width: 100%;
+    height: 389.91px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    z-index: -1;
+}
+
+#vid{
+    /* position: relative;
+    top: -50%; */
+}
+video{
+    position: absolute;
+    top: -50%;
+    left: 0;
+    width: 100%;
+}
+
+.slogan{
+    max-height: 25.6px;
+    color: #55728c;
+}
+.title1{
+    font-size: 60px;
+    /* padding-bottom: 10px; */
+    padding: 0%;
+    color: #ffffff;
+    margin: 2vh 0 4vh 0;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+}
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button1{
+    margin-bottom: 35px;
+}
+.temp{
+    height: 26.4px;
+}
+.btnRed{
+    padding: 10px 20px;
+	background-color: #ff4941;
+	border: 2px solid #ff4941;
+	border-radius: 35px;
+	color: #fff;
+	font-size: 13px !important;
+	letter-spacing: 0.06em !important;
+	text-transform: uppercase;
+    text-decoration-line: none;
+}
+.inside{
+    padding: 35px 15px 0 15px;
+}
+.inner0{
+    display: block;
+    padding-top: 90.125px;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    height: 208.587px;
+    width: 1170px;
+}
 @media screen and (max-width: 2500px) {
     #navIcon {
         display: none;
     }
     button{
         display: none;
-    }
-    .setup{
-        position: relative;
-        transform: translate(9px,-12px);
     }
     #nav0{
         display: none;
@@ -141,10 +271,6 @@ body{
         padding: 5%;
         background-color: #0e0864;
         padding-top: 0;
-    }
-    .setup{
-        position: relative;
-        transform: translate(0,0);
     }
     .left{
         width: 30%;
@@ -172,11 +298,6 @@ body{
         background-color: #0e0864;
         padding-top: 0;
         padding-bottom: 0;
-    }
-
-    .setup{
-        position: relative;
-        transform: translate(0,0);
     }
 
     #nav0{
